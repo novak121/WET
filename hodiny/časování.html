@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            .dog {
+                height: 300px;
+            }
+
+            .reveal {
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <img src="pes.jfif" class="dog" alt="" />
+
+        <script>
+            let dog = document.querySelector(".dog")
+
+            // setTimeout(reveal, 2000)
+
+            //function reveal() {
+            //    dog.classList.toggle("reveal")
+            //}
+
+            setInterval(() => {
+                dog.classList.toggle("reveal")
+            }, 10000)
+        </script>
+    </body>
+</html>

@@ -1,0 +1,12 @@
+{
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "prettier.semi": false,
+    "prettier.tabWidth": 4,
+    "workbench.iconTheme": "material-icon-theme",
+    "liveServer.settings.CustomBrowser": "chrome",
+    "terminal.external.windowsExec": "C:\\portable\\PortableGit\\cmd\\git.exe",
+    "git.enabled": true,
+    "git.path": "C:\\portable\\PortableGit\\cmd\\git.exe",
+    "liveServer.settings.AdvanceCustomBrowserCmdLine": ""
+}

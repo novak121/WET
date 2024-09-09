@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <script src="zaverecnytest.js" defer></script>
+    </head>
+    <body>
+        <h1>1.Oblíbené předměty</h1>
+        <h2>Zadej předmět:</h2>
+        <input type="text" id="predmety"/>
+        <button id="predmety">Přidej Předmět</button>
+        <br /><br />
+
+        <h2>
+            <strong> Seznam předmětů:</strong>
+            <h2><p id="vystup"></p></h2>
+            <button onclick="roztriditPredmety()">Roztřiď předměty:</button>
+        </h2>
+
+        <h2>
+            <br />
+            <strong>Oblíbené předměty:</strong>
+        </h2>
+        <p id="kratka"></p>
+        <h2>
+            <strong>Ostatní:</strong>
+        </h2>
+        <p id="dlouha"></p>
+
+        <h1>2. Papoušek</h1>
+        <h2>Kolikrát bude papoušek opakovat?</h2>
+        <style>
+            .Ahoj {
+                font-size: 24px;
+            }
+        </style>
+        <input type="text" id="pocet" />
+        <button onclick="vypsatSlova()">Pusť papouška</button>
+        <br /><br />
+    </body>
+</html>

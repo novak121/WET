@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+
+    <style>
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100vh;
+            align-items: center;
+        }
+
+        .ctverecek {
+            height: 200px;
+            aspect-ratio: 1/1;
+            border: 2px solid black;
+            margin: 10px;
+        }
+
+        .jedna {
+            background-color: rgb(118, 57, 177);
+            transition: 1s ease-in;
+        }
+
+        .ctverecek:nth-child(2) {
+            background-color: aqua;
+        }
+
+        .jedna:hover {
+            background-color: pink;
+            translate: 200%, 50%;
+            rotate: 45deg;
+        }
+    </style>
+
+    <body>
+        <div class="wrapper">
+            <div class="ctverecek jedna"></div>
+            <div class="ctverecek"></div>
+            <div class="ctverecek"></div>
+        </div>
+    </body>
+</html>

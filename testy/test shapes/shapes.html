@@ -1,0 +1,95 @@
+<html lang="cs">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Test</title>
+        <style>
+            body {
+                font-family: monospace;
+                font-size: 32px;
+                text-align: center;
+            }
+
+            h1 {
+                font-size: 35px;
+                text-align: center;
+            }
+            .tlacitko {
+                padding: 10px;
+                font-size: 20px;
+                margin: 10px;
+                text-align: center;
+            }
+
+            .platno {
+                border: 2px solid black;
+                width: 800px;
+                height: 500px;
+                margin: auto;
+            }
+
+            .ctverec {
+                width: 100px;
+                height: 100px;
+                background-color: coral;
+            }
+
+            .kolecko {
+                margin: auto;
+                height: 25px;
+                width: 25px;
+                background-color:lightblue;
+                border-radius: 50%;
+                display: inline-block;
+            }
+
+            .text-box {
+                margin: auto;
+            }
+
+            .obrazek {
+                width: 50px;
+                position: absolute;
+                top: 0px;
+                right: 0px;
+            }
+
+        </style>
+    </head>
+    <body>
+            <h1>Picasso</h1>
+            <div class="platno"></div>
+            <div>
+            <div><button onclick="kresliText()" id="tlacitkoText" class="tlacitko">Text</button></div>
+            <div><button id="tlacitkoKolecka" class="tlacitko">Kolečka</button></div>
+            <div><button id="tlacitkoCtverce" class="tlacitko">Čtverečky</button></div>
+        </div>
+        </div>
+        <img class="obrazek" src="hide.png" alt="">
+
+        <script>
+            const platno = document.querySelector(".platno")
+            const tlacitkoCtverce = document.querySelector("#tlacitkoCtverce")
+            const tlacitkoKolecka = document.querySelector("#tlacitkoKolecka")
+            const tlacitkoText = document.querySelector("#tlacitkoText")
+            const obrazek = document.querySelector(".obrazek")
+            const wrapper = document.querySelector(".wrappper")
+
+            function kresliCtverec() {
+            }
+
+            function kresliKolecko() {
+            }
+
+            function kresliText() {
+                var tlacitkoText = document.getElementById("tlacitkoText");
+                tlacitkoText.innerHTML += "Áááá";
+                for (var i = 0; i > 5; i++);
+               { tlacitkoText.innerHTML
+                +="Áááá";
+               }
+            }
+
+        </script>
+    </body>
+</html>

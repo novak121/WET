@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="ball"></div>
+
+        <div class="stickman">
+            <div class="leg leg1"></div>
+            <div class="leg leg2"></div>
+            <div class="leg leg3"></div>
+            <div class="head"></div>
+        </div>
+
+        <div class="goal"></div>
+    </body>
+    <style>
+        .stickman {
+            position: relative;
+            width: 150px;
+            height: 300px;
+        }
+
+        .head {
+            width: 50px;
+            height: 50px;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .ball {
+            position: relative;
+        }
+
+        .stickman {
+            position: relative;
+        }
+
+        .goal {
+            position: relative;
+        }
+
+        .ball {
+            width: 30px;
+            height: 30px;
+            background-color: black;
+            border-radius: 50%;
+            margin-top: 50px;
+            animation: moveBall 1s forwards;
+        }
+
+        @keyframes moveBall {
+            to {
+                transform: translateX(150px) translateY(-100px);
+            }
+        }
+
+        .stickman {
+            width: 200px;
+            height: 300px;
+        }
+
+        .leg {
+            width: 15px;
+            height: 60px;
+            background-color: black;
+            position: absolute;
+            bottom: 0;
+            transition: transform 0.5s;
+        }
+
+        .leg1 {
+            left: 50px;
+        }
+
+        .leg2 {
+            left: 85px;
+        }
+
+        .leg3 {
+            left: 120px;
+            animation: kick 1s forwards;
+        }
+
+        @keyframes kick {
+            to {
+                transform: rotate(-45deg);
+            }
+        }
+
+        .goal {
+            width: 150px;
+            height: 100px;
+            background-color: black;
+            margin-top: 50px;
+        }
+    </style>
+</html>

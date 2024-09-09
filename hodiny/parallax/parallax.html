@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Údolí jednorožců</title>
+    </head>
+
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+
+        .parallax {
+            position: relative;
+            min-height: 100vh;
+            z-index: -5;
+            overflow: hidden;
+        }
+
+        .parallax > img {
+            position: absolute;
+            width: 100%;
+            overflow: hidden;
+            object-fit: cover;
+            min-height: 100%;
+        }
+
+        .clouds_1,
+        .clouds_2 {
+            animation: slide-sideways linear;
+            animation-timeline: scroll(root);
+        }
+
+        .rocks,
+        .ground,
+        .sky {
+            animation: slide-down linear;
+            animation-timeline: scroll(root);
+        }
+
+        .clouds_1 {
+            z-index: 3;
+            --slide-speed: -10;
+        }
+
+        .clouds_2 {
+            z-index: 5;
+            --slide-speed: 10;
+        }
+
+        .ground {
+            z-index: 5;
+            --slide-speed: 1;
+        }
+
+        .rocks {
+            z-index: 4;
+            --slide-speed: 30;
+        }
+
+        .sky {
+            z-index: 2;
+            --slide-speed: 1;
+        }
+
+        section p {
+            width: 75ch;
+            text-align: justify;
+            margin-inline: auto;
+            color: white;
+            font-size: 1rem;
+        }
+
+        section {
+            padding-top: 250px;
+            z-index: 10;
+            background-image: linear-gradient(#064f7d, #0177b2, #9186a1);
+        }
+
+        .heading {
+            position: absolute;
+            z-index: 6;
+            color: white;
+            text-align: center;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 20%;
+            font-size: 6rem;
+            --slide-speed: 32;
+            font-family: "Dancing Script";
+        }
+
+        .firefly {
+            height: 15px;
+            aspect-ratio: 1/1;
+            background-color: yellow;
+            z-index: 99;
+            position: absolute;
+            transition: 0.5 ease-out;
+            translate: -50% -50%;
+            filter: blur(2px);
+        }
+
+        @keyframes slide-down {
+            100% {
+                translate: 0 calc(var(--slide-speed) * 30px);
+            }
+        }
+
+        @keyframes slide-sideways {
+            100% {
+                translate: 0 calc(var(--slide-speed) * 100px);
+            }
+        }
+    </style>
+    <body>
+        <div class="parallax">
+            <img class="clouds_1" src="layers/clouds_1.png" alt="" />
+            <img class="clouds_2" src="layers/clouds_2.png" alt="" />
+            <img class="ground" src="layers/ground.png" alt="" />
+            <img class="rocks" src="layers/rocks.png" alt="" />
+            <img class="sky" src="layers/sky.png" alt="" />
+            <h1 class="heading">Hello there!</h1>
+        </div>
+
+        <div>
+            <section>
+                <p>
+                    Once upon a time, there was a beautiful island. In the
+                    island meadows, there lived a young fairy named Isotopia.
+                    She had a pet monkey named Poppy. Isotopia and Poppy were
+                    simple beings with simple tastes and lifestyle. They lived
+                    in a small, simply furnished house. On the same island,
+                    there also lived a Unicorn, who had a special ability of
+                    flying very high and far. The only dream of Isotopia was
+                    that some day, she would ride on the Unicorn.
+                </p>
+                <p>
+                    One day, Isotopia was alone at home and Poppy had gone to
+                    eat some bananas. When he climbed a banana tree and started
+                    eating, he saw that the Unicorn was also standing down
+                    below. He was looking at him. Poppy was not an ordinary
+                    monkey. He was very wise and could understand the language
+                    of every animal on the island. He dropped down some bananas
+                    to the Unicorn also, and said, “Would you allow me to ride
+                    on your back some day?”
+                </p>
+                <p>
+                    The Unicorn replied “You have fed me tasty fruits. You can
+                    surely ride on me.” Poppy was exhilarated! He jumped on the
+                    Unicorn’s back and the Unicorn flew high up in the sky.
+                    Poppy enjoyed very much. When the Unicorn landed down, Poppy
+                    said “Thanks for the ride. I had never imagined how
+                    different an experience this would be! I am Poppy. What’s
+                    your name?”
+                </p>
+                <p>
+                    Poppy said “Of course, I’ll be your friend” They played
+                    together. When it was late, Poppy said good bye to Euno. On
+                    reaching home, he told Isotopia all about the Unicorn. She
+                    exclaimed “Oh! How wonderful! I wish I could ride on him as
+                    well! Poppy, please will you take me to the Unicorn
+                    tomorrow?” Poppy accepted her request.
+                </p>
+                <p>
+                    Next day, when they went to meet Euno, they saw that five
+                    wicked men had tied Euno with a rope, were pulling him &
+                    forcing him to go with them. Isotopia asked, “Why are you
+                    doing this to the poor Unicorn?” One of the men answered
+                    “Say nothing, girl! A unicorn is a very rare find! We are
+                    Iucky to come across him. We will earn loads of money from
+                    him.” And saying this, the man pushed back Isotopia. The
+                    five wicked men then took away Euno. Isotopia and Poppy felt
+                    sad for Euno, but those five men, from the neighbouring
+                    village on the island, were famous for their notoriety, so
+                    Isotopia and Poppy decided to keep silent. They knew where
+                    the men lived. They made a plan to save Euno.
+                </p>
+                <p>
+                    When night fell, they went to the men’s home. Then, they
+                    secretly added a sleeping potion in their food.
+                    Unfortunately, only two of the men ate that food and fell
+                    into a deep sleep. The remaining three men had dinner
+                    outside & were sleeping in another room. Isotopia locked the
+                    door of that room from outside. Now Poppy tried to untie the
+                    rope with which Euno was tied. But the rope was fastened
+                    very tightly. So, when Poppy tried to open the rope, Euno
+                    got hurt and uttered a cry of pain. The three men woke up,
+                    while two were in a deep sleep. They understood that Euno’s
+                    friends had come to free him, but found that their door was
+                    locked from outside. They started pushing & kicking the
+                    door, and after few minutes, managed to break the door and
+                    came out. When they came out, suddenly Euno’s rope came
+                    free. The men came running towards them,
+                </p>
+
+                <script>
+                    const firefly = document.querySelector(".firefly")
+
+                    let mouseX = 0
+                    let mouseY = 0
+
+                    document.addEventListener("mousemove", function (event) {
+                        mouseX = event.clientX
+                        mouseY = event.clientY
+
+                        litejSvetlusko()
+                    })
+
+                    window.addEventListener("scroll", function () {
+                        litejSvetlusko()
+                    })
+
+                    function litejSvetlusko() {
+                        let scrollX = window.pageXOffset
+                        let scrollY = window.pageYOffset
+
+                        firefly.style.left = mouseX + scrollX + "px"
+                        firefly.style.top = mouseY + scrollY + "px"
+                    }
+                </script>
+            </section>
+        </div>
+    </body>
+</html>

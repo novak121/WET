@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    padding: 0%;
+    background-color: #FFEBCD;
+}
+
+.container {
+    box-sizing: black;
+
+    width: 250px;
+    height: 350px;
+    margin: auto;
+    background-color: #b9e6ff;
+}
+
+.ctverec1 .ctverec2 .ctverec3 {
+width: 250px;
+float: left;
+margin: 10px;
+}
+
+.ctverec1 {
+    background-color: #b9e6ff;
+}
+
+.ctverec2 {
+    background-color: #b9e6ff;
+}
+
+.ctverec3 {
+    background-color: #b9e6ff;
+}
+
+
+
+<div class="image"></div>
+<div class="tlacitko"></div>
+<div class="text"></div>
+
+<script type="text/javascript">
+document.getElementById("image").onclick = function () {
+    document.getElementById("image").style.display = "none"
+}
+
+document.getElementById("tlacitko").onclick = function () {
+    document.getElementById("tlacitko").style.display = "none"
+}
+
+document.getElementById("text").onclick = function () {
+    document.getElementById("text").style.display = "none"
+}
+</script>

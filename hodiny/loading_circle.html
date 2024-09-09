@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            body {
+                background-color: #181818;
+            }
+
+            .wrapper {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+            }
+
+            .cirlce {
+                width: 50px;
+                aspect-ratio: 1/1;
+                border: 3px solid purple;
+                border-top: 3px solid white;
+                border-radius: 50%;
+                animation: loading 1s linear;
+            }
+
+            @keyframes loading {
+                0% {
+                    rotate: 0deg;
+                }
+                100% {
+                    rotate: 360deg;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="cirlce"></div>
+        </div>
+    </body>
+</html>

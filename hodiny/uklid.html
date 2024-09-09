@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            .wrapper {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
+
+            .strecha {
+                width: 0;
+                height: 0;
+                border-left: 200px solid transparent;
+                border-right: 200px solid transparent;
+                border-bottom: 200px solid black;
+            }
+
+            .domecek {
+                height: 450px;
+                width: 350px;
+                border: 5px solid red;
+            }
+
+            .koste {
+                width: 60px;
+                animation: zametani 3s alternate-reverse infinite,
+                    rotace 3ms ease forwards alternate infinite;
+            }
+
+            .mosquito {
+                width: 290px;
+                animation: bzuceni 1000ms alternate-reverse infinite,
+                    rotace2 10ms ease forwards alternate infinite;
+            }
+
+            @keyframes bzuceni {
+                50% {
+                    translate: 100px 100px;
+                }
+            }
+
+            @keyframes rotace2 {
+                50% {
+                    rotate: -20deg;
+                }
+                100% {
+                    rotate: 20deg;
+                }
+            }
+
+            @keyframes zametani {
+                60% {
+                    translate: 200px 250px;
+                }
+                70% {
+                    translate: 200px 100px;
+                }
+            }
+
+            @keyframes rotace {
+                50% {
+                    rotate: -20deg;
+                }
+                100% {
+                    rotate: 20deg;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="strecha"></div>
+            <div class="domecek">
+                <img class="koste" src="koste.png" />
+                <img class="mosquito" src="mosquito.png" />
+            </div>
+        </div>
+    </body>
+</html>
